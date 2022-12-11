@@ -100,10 +100,10 @@
     <h1 class="h">Welcome To Calculator</h1>
     <div class="box">
       <div>
-        <input id="firstnum" type="number" placeholder="Enter 1st number" />
+        <input id="first" type="number" placeholder="Enter 1st number" />
       </div>
       <div>
-        <input id="secondnum" type="number" placeholder="Enter 2st number" />
+        <input id="second" type="number" placeholder="Enter 2st number" />
       </div>
       <button id="add" onclick="addition()">Add</button>
       <button id="Sub" onclick="Subtraction()">Subtract</button>
@@ -114,26 +114,26 @@
 </html>
 <script>
   function addition() {
-    var val1 = parseInt(document.getElementById("firstnum").value);
-    var val2 = parseInt(document.getElementById("secondnum").value);
+    var val1 = parseInt(document.getElementById("first").value);
+    var val2 = parseInt(document.getElementById("second").value);
     var sum = val1 + val2;
     alert("Ans is :-" + "  " + sum);
   }
   function Subtraction() {
-    var val1 = parseInt(document.getElementById("firstnum").value);
-    var val2 = parseInt(document.getElementById("secondnum").value);
+    var val1 = parseInt(document.getElementById("first").value);
+    var val2 = parseInt(document.getElementById("second").value);
     var sub = val1 - val2;
     alert("Ans is :- " + "  " + sub);
   }
   function Multiplication() {
-    var val1 = parseInt(document.getElementById("firstnum").value);
-    var val2 = parseInt(document.getElementById("secondnum").value);
+    var val1 = parseInt(document.getElementById("first").value);
+    var val2 = parseInt(document.getElementById("second").value);
     var mut = val1 * val2;
     alert("Ans is :- " + "  " + mut);
   }
   function Division() {
-    var val1 = parseInt(document.getElementById("firstnum").value);
-    var val2 = parseInt(document.getElementById("secondnum").value);
+    var val1 = parseInt(document.getElementById("first").value);
+    var val2 = parseInt(document.getElementById("second").value);
     var dive = val1 / val2;
     alert("Ans is :-" + "  " + dive);
   }
